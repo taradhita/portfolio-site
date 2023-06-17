@@ -1,4 +1,4 @@
-import { faMoon } from "@fortawesome/free-solid-svg-icons"
+import { faCircleHalfStroke } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useTheme } from "next-themes"
 import Link from "next/link"
@@ -60,7 +60,7 @@ const Navbar = () => {
                   )
                 })}
                 <button onClick={toggleDarkMode} className="hover:bg-gray-700 dark:hover:bg-gray-200 dark:text-gray-200 hover:text-white dark:hover:text-gray-700 px-3 py-2 rounded-md">
-                  <FontAwesomeIcon icon={faMoon} size="lg"/>
+                  <FontAwesomeIcon icon={faCircleHalfStroke} size="lg"/>
                 </button>
               </div> 
           </div>
@@ -110,7 +110,7 @@ const Navbar = () => {
                     </Link>
                   )
                 })}
-                <button onClick={toggleDarkMode} className="px-3 py-2 dark:text-gray-300 hover:bg-gray-700 hover:text-white rounded-md"><FontAwesomeIcon icon={faMoon} size="lg"/></button>
+                <button onClick={toggleDarkMode} className="px-3 py-2 dark:text-gray-300 hover:bg-gray-700 hover:text-white rounded-md"><FontAwesomeIcon icon={faCircleHalfStroke} size="lg"/></button>
             </div>
           </div>
           )}

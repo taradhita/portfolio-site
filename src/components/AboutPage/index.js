@@ -45,7 +45,7 @@ const AboutPage = () => {
                 <h3 className="text-lg md:text-xl font-mono font-bold mb-2 dark:text-gray-300">{skill.parent}</h3>
                 <ul className={`flex flex-wrap text-sm font-mono leading-6 ${skill.child.length < 3 ? 'mb-0' : 'mb-2'}`}>
                   {skill.child.map((child) => (
-                    <li key={child} className="bg-gray-200 mr-2 px-3 py-1 mb-3 rounded-full max-w-max break-all">{child}</li>
+                    <li key={child} className="bg-gray-200 mr-2 px-3 py-1 mb-3 rounded-full max-w-max break-all text-gray-800">{child}</li>
                   ))}
                 </ul>
               </div>
