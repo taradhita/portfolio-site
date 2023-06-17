@@ -1,18 +1,38 @@
 import { faMoon } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { useTheme } from "next-themes"
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const Navbar = () => {
   const [isShow, setIsShow] = useState(false)
-  const [darkMode, setDarkMode] = useState(false)
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme()
 
   const toggleMenu = () => {
       setIsShow(!isShow)
   }
 
+  const handleLinkClick = () => {
+    setTimeout(() => {
+      setIsShow(false);
+    }, 200); 
+  };
+
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode)
+    if (theme === "light") {
+      return setTheme("dark");
+    }
+    return setTheme("light");
+  }
+
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
   }
 
   const menus = [
@@ -26,7 +46,7 @@ const Navbar = () => {
     <nav className="bg-white dark:bg-gray-800 border-b">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="font-mono text-xl font-bold dark:text-gray-200">
+          <Link href="/" onClick={() => setIsShow(false)} className="font-mono text-xl font-bold dark:text-gray-200">
               Nadia Taradhita
           </Link>
           {/* Navbar Menu Desktop */}
@@ -39,14 +59,14 @@ const Navbar = () => {
                     </Link>
                   )
                 })}
-                <button className="hover:bg-gray-700 dark:hover:bg-gray-200 dark:text-gray-200 hover:text-white dark:hover:text-gray-700 px-3 py-2 rounded-md">
+                <button onClick={toggleDarkMode} className="hover:bg-gray-700 dark:hover:bg-gray-200 dark:text-gray-200 hover:text-white dark:hover:text-gray-700 px-3 py-2 rounded-md">
                   <FontAwesomeIcon icon={faMoon} size="lg"/>
                 </button>
               </div> 
           </div>
           {/* Hamburger Icon for Mobile */}
           <div className="flex lg:hidden">
-          <button
+            <button
               className="text-dark dark:text-gray-300 inline-flex items-center justify-center p-2 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none"
               onClick={toggleMenu}
             >
@@ -81,6 +101,7 @@ const Navbar = () => {
                 {menus.map(menu => {
                   return (
                     <Link
+                      onClick={handleLinkClick}
                       href={menu.href}
                       key={menu.page}
                       className="text-dark dark:text-gray-300 hover:text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium font-mono"
@@ -89,7 +110,7 @@ const Navbar = () => {
                     </Link>
                   )
                 })}
-                <button className="px-3 py-2 dark:text-gray-300 hover:bg-gray-700 hover:text-white rounded-md"><FontAwesomeIcon icon={faMoon} size="lg"/></button>
+                <button onClick={toggleDarkMode} className="px-3 py-2 dark:text-gray-300 hover:bg-gray-700 hover:text-white rounded-md"><FontAwesomeIcon icon={faMoon} size="lg"/></button>
             </div>
           </div>
           )}

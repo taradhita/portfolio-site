@@ -22,7 +22,7 @@ const Card = ({project}) => {
       <div className="flex items-center justify-between">
         <ul className="flex flex-wrap text-sm font-mono leading-6mb-2">
           {project.techStack.map((tech) => (
-            <li key={tech} className="bg-gray-200 mr-2 px-3 py-1 mb-3 rounded-full">{tech}</li>
+            <li key={tech} className="bg-gray-200 mr-2 px-3 py-1 mb-3 rounded-full text-gray-800">{tech}</li>
           ))}
         </ul>
       </div>
