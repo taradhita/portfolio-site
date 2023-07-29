@@ -30,7 +30,7 @@ const skills = [
 
 const AboutPage = () => {
   return (
-    <section id="about" className="bg-white dark:bg-gray-800 py-20">
+    <section id="about" className="bg-white dark:bg-gray-800 py-20 w-full min-h-screen">
       <div className="container mx-auto px-4 sm:px-8 lg:px-16">
         <div className="py-5">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-mono dark:text-gray-300 mb-4">About Me</h1>

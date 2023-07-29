@@ -1,11 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import Image from "next/image";
 
 const socials = [
   {name: 'github', link: 'https://github.com/taradhita', logo: faGithub},
   {name: 'linkedin', link: 'https://linkedin.com/in/nadiataradhita', logo: faLinkedinIn},
-  {name: 'instagram', link: 'https://instagram.com/taradhita', logo: faInstagram}
+  {name: 'instagram', link: 'https://instagram.com/taradhita', logo: faInstagram},
+  {name: 'email', link: 'mailto:taradhita@gmail.com', logo: faEnvelope}
 ]
 
 const Hero = () => {
@@ -27,7 +29,7 @@ const Hero = () => {
               I am a back-end developer based in Bali, Indonesia. 
             </p>
             <p className="text-md md:text-l lg:text-xl mb-2 font-thin font-mono dark:text-gray-300">
-              Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              Currently I am building some cool stuff at Timedoor Indonesia.
             </p>
             <div className="flex mt-6">
               {socials.map((social) => {

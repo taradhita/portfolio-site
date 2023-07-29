@@ -11,7 +11,7 @@ export default function App ({ Component, pageProps }) {
       <Head>
         <title>Nadia Taradhita | Back End Developer</title>
       </Head>
-        <ThemeProvider attribute="class">
+      <ThemeProvider attribute="class">
         <Navbar />
         <Component {...pageProps} />
       </ThemeProvider>

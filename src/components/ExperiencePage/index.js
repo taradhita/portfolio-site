@@ -26,7 +26,7 @@ const ExperiencePage  = () => {
   ];
 
   return (
-    <section id="experience" className="bg-white dark:bg-gray-800 py-20">
+    <section id="experience" className="bg-white dark:bg-gray-800 py-20 w-full min-h-screen">
       <div className="container mx-auto px-4 sm:px-8 lg:px-16">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-mono dark:text-gray-300 mb-4">Experience</h1>
         <ol className="relative border-l border-gray-200 dark:border-gray-700">
