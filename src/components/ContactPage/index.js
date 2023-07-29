@@ -3,7 +3,7 @@ import Button from "../Button"
 const ContactPage = () => {
     return (
     <section id="contact" className="bg-white dark:bg-gray-800 py-10 md:py-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-16">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-mono mb-4 text-gray-900 dark:text-gray-300">Contact Me</h2>
         <p className="text-gray-600 dark:text-gray-400 text-base md:text-lg font-mono mb-8 ">Feel free to reach out to me for any inquiries or collaborations on <a href="">Linkedin</a>, Github, or Instagram. Or shoot me a message below.</p>
         <form action="#" className="space-y-8">

@@ -2,12 +2,14 @@ import { faCircleHalfStroke } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useTheme } from "next-themes"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
 
 const Navbar = () => {
   const [isShow, setIsShow] = useState(false)
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
+  const currentRoute = usePathname()
 
   const toggleMenu = () => {
       setIsShow(!isShow)
@@ -39,11 +41,15 @@ const Navbar = () => {
     {href:'/about', page:'About'}, 
     {href:'/experience', page:'Experience'}, 
     {href:'/projects', page:'Projects'}, 
-    {href:'contact', page:'Contact'},
+    {href:'/contact', page:'Contact'},
   ]
 
+  const navLinkStyle = "text-dark dark:text-gray-200 hover:text-white dark:hover:text-gray-700 hover:bg-gray-700 dark:hover:bg-gray-200 px-1 py-1  text-sm font-mono font-medium"
+
+  const activeStyle = navLinkStyle + " border-b-4 border-teal-400"
+
   return (
-    <nav className="bg-white dark:bg-gray-800 border-b">
+    <nav className="bg-white dark:bg-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" onClick={() => setIsShow(false)} className="font-mono text-xl font-bold dark:text-gray-200">
@@ -54,12 +60,12 @@ const Navbar = () => {
               <div className="ml-10 flex items-baseline space-x-4">
                 {menus.map(menu => {
                   return (
-                    <Link href={menu.href} key={menu.page} className="text-dark dark:text-gray-200 hover:text-white dark:hover:text-gray-700 hover:bg-gray-700 dark:hover:bg-gray-200  px-3 py-2 rounded-md text-sm font-mono font-medium">
+                    <Link href={menu.href} key={menu.page} className={currentRoute === menu.href ? activeStyle : navLinkStyle}>
                       {menu.page}
                     </Link>
                   )
                 })}
-                <button onClick={toggleDarkMode} className="hover:bg-gray-700 dark:hover:bg-gray-200 dark:text-gray-200 hover:text-white dark:hover:text-gray-700 px-3 py-2 rounded-md">
+                <button onClick={toggleDarkMode} className="hover:bg-gray-700 dark:hover:bg-gray-200 dark:text-gray-200 hover:text-white dark:hover:text-gray-700 px-1 py-1">
                   <FontAwesomeIcon icon={faCircleHalfStroke} size="lg"/>
                 </button>
               </div> 
@@ -67,7 +73,7 @@ const Navbar = () => {
           {/* Hamburger Icon for Mobile */}
           <div className="flex lg:hidden">
             <button
-              className="text-dark dark:text-gray-300 inline-flex items-center justify-center p-2 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none"
+              className="text-dark dark:text-gray-300 inline-flex items-center justify-center p-2 hover:text-white hover:bg-gray-700 focus:outline-none"
               onClick={toggleMenu}
             >
               <svg
@@ -104,7 +110,7 @@ const Navbar = () => {
                       onClick={handleLinkClick}
                       href={menu.href}
                       key={menu.page}
-                      className="text-dark dark:text-gray-300 hover:text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium font-mono"
+                      className="text-dark dark:text-gray-300 hover:text-white hover:bg-gray-700 block px-3 py-2 text-base font-medium font-mono"
                       >
                       {menu.page}
                     </Link>
