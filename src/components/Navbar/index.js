@@ -40,8 +40,7 @@ const Navbar = () => {
   const menus = [
     {href:'/about', page:'About'}, 
     {href:'/experience', page:'Experience'}, 
-    {href:'/projects', page:'Projects'}, 
-    {href:'/contact', page:'Contact'},
+    {href:'/projects', page:'Projects'},
   ]
 
   const navLinkStyle = "text-dark dark:text-gray-200 hover:text-white dark:hover:text-gray-700 hover:bg-gray-700 dark:hover:bg-gray-200 px-1 py-1  text-sm font-mono font-medium"
