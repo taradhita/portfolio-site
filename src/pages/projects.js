@@ -1,7 +1,7 @@
 import ProjectsPage from "../components/ProjectsPage"
 
 const Projects = () => {
-    return <ProjectsPage />
+  return <ProjectsPage />
 }
 
 export default Projects

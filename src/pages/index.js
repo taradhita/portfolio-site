@@ -1,10 +1,10 @@
 import Hero from "../components/Hero"
 
 const Index = () => {
-    return (
-        <Hero />
-    )
-  }
+  return (
+    <Hero />
+  )
+}
   
 export default Index
   

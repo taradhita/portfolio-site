@@ -35,8 +35,9 @@ const AboutPage = () => {
         <div className="py-5">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-mono dark:text-gray-300 mb-4">About Me</h1>
           <p className="text-gray-600 dark:text-gray-400 text-base md:text-ml font-mono mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus mattis mauris vel blandit. Maecenas tempus cursus sapien, a interdum nulla ornare vitae. Proin massa ligula, feugiat non arcu ac, ultrices tincidunt leo. Donec libero nisl, dapibus sit amet molestie vel, auctor non ante. Vivamus pulvinar quis sem vitae luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed faucibus justo nisl, vitae egestas nisl venenatis eget. Vivamus non tincidunt ex. Fusce egestas urna in cursus consectetur. Fusce ex augue, pretium sit amet sem at, auctor facilisis eros. Morbi ut orci vestibulum, facilisis lacus in, mattis urna. </p>
+          
         </div>
-        <div className="py-5">
+        {/* <div className="py-5">
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-mono dark:text-gray-300 mb-4">Skills</h2>
           <div className="mt-6 md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {skills.map((skill) => {
@@ -52,7 +53,7 @@ const AboutPage = () => {
             );
           })}
           </div>          
-        </div>
+        </div> */}
       </div>
     </section>
   )

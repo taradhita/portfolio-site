@@ -1,7 +1,7 @@
 import ExperiencePage from "../components/ExperiencePage"
 
 const Experience = () => {
-    return <ExperiencePage />
+  return <ExperiencePage />
 }
 
 export default Experience

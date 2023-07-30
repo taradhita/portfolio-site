@@ -32,9 +32,9 @@ const Hero = () => {
               Currently I am building some cool stuff at Timedoor Indonesia.
             </p>
             <div className="flex mt-6">
-              {socials.map((social) => {
+              {socials.map((social, index) => {
                 return(
-                  <a href={social.link} className="inline-flex items-center justify-center w-10 h-10 mr-2 text-gray-100 transition-colors duration-150 bg-gray-700 rounded-full focus:shadow-outline hover:bg-gray-800">
+                  <a href={social.link} key={index} className="inline-flex items-center justify-center w-10 h-10 mr-2 text-gray-100 transition-colors duration-150 bg-gray-700 rounded-full focus:shadow-outline hover:bg-gray-800">
                   <FontAwesomeIcon icon={social.logo} className="w-5 h-5" size="xl"/>
               </a>
                 )

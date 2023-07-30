@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Hate Speech Classification",
+    "description": "",
+    "techStack": ["Python", "Flask", "Tensorflow"],
+    "githubLink": "https://github.com/taradhita/hatespeech-id-webapp",
+    "websiteLink": ""
+  },
+  {
+    "id": 2,
+    "name": "Wordle Bot",
+    "description": "Python based Wordle bot that utilizes Selenium to solve Wordle quiz.",
+    "techStack": ["Python", "Selenium"],
+    "githubLink": "https://github.com/taradhita/wordle-bot",
+    "websiteLink": ""
+  },
+  {
+    "id": 3,
+    "name": "Whatsapp OTP Package",
+    "description": "Laravel based package to send Whatsapp OTP notification using Whatsapp Cloud API",
+    "techStack": ["PHP", "Laravel"],
+    "githubLink": "https://github.com/taradhita/whatsapp-otp",
+    "websiteLink": ""
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Website",
+    "description": "Source code for this portfolio website built with Next.js.",
+    "techStack": ["JavaScript", "React", "Next.js", "TailwindCSS"],
+    "githubLink": "https://github.com/taradhita/portfolio-site",
+    "websiteLink": "https://vercel.com"
+  }
+]
