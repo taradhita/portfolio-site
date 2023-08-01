@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Hate Speech Classification",
-    "description": "",
+    "description": "Web application for Twitter hate speech classification in Indonesian language using CNN (Convolutional Neural Network) model",
     "techStack": ["Python", "Flask", "Tensorflow"],
     "githubLink": "https://github.com/taradhita/hatespeech-id-webapp",
     "websiteLink": ""
@@ -26,9 +26,9 @@
   {
     "id": 4,
     "name": "Portfolio Website",
-    "description": "Source code for this portfolio website built with Next.js.",
+    "description": "Source code for this portfolio website built with Next.js",
     "techStack": ["JavaScript", "React", "Next.js", "TailwindCSS"],
     "githubLink": "https://github.com/taradhita/portfolio-site",
-    "websiteLink": "https://vercel.com"
+    "websiteLink": "/"
   }
 ]

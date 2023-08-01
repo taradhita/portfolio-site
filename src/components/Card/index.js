@@ -8,12 +8,12 @@ const Card = ({project}) => {
       <h3 className="text-lg md:text-xl font-mono font-bold mb-2 dark:text-gray-300">{project.name}</h3>
       <div className='py-2'>
         {project.githubLink && (
-          <a href={project.githubLink} target="_blank" rel="noopener noreferrer" title='Github' className="text-gray-800 dark:text-gray-200 hover:underline mr-2">
+          <a href={project.githubLink} target="_blank" rel="noopener noreferrer" title='Github' className="text-gray-800 dark:text-gray-200 hover:underline hover:text-gray-400 hover:dark:text-gray-600 mr-2">
             <FontAwesomeIcon icon={faGithub} size='lg' />
           </a>
         )}
         {project.websiteLink && (
-          <a href={project.websiteLink} target="_blank" rel="noopener noreferrer" title='Website' className="text-gray-800 dark:text-gray-200 hover:underline">
+          <a href={project.websiteLink} target="_blank" rel="noopener noreferrer" title='Website' className="text-gray-800 dark:text-gray-200 hover:underline hover:text-gray-400 hover:dark:text-gray-600">
             <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='lg'/>
           </a>
         )}
