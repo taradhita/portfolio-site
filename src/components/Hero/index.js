@@ -16,7 +16,7 @@ const Hero = () => {
   const transitionRef = useRef(null)
 
   return (
-    <section className="py-40 bg-white dark:bg-gray-800 h-screen">
+    <section className="py-10 md:py-40 bg-white dark:bg-gray-800 h-screen">
       <PageTransition ref={transitionRef}>
         <div className="container mx-auto px-4 sm:px-8 lg:px-16">
           <div className="flex flex-wrap">
