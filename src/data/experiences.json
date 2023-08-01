@@ -5,9 +5,8 @@
     "title": "Back End Developer",
     "duration": "March 2021 - Present",
     "description": [
-      "Developed and integrated an e-commerce API with third-party services, including Shipper and Midtrans, using PHP and Laravel framework.",
+      "Developed and integrated an e-commerce API with third-party services using PHP and Laravel framework.",
       "Created a reusable Laravel package to optimize notification feature development.",
-      "Collaborated with cross-functional teams, including frontend developers and product managers, to gather requirements and deliver high-quality features that enhance user experience and drive business growth.",
       "Moderated monthly internal back-end development team sharing sessions, fostering knowledge exchanges to help each team member develop new skills and ideas."
     ]
   },
@@ -17,8 +16,7 @@
     "title": "External Coding Reviewer",
     "duration": "July 2022 - January 2023",
     "description": [
-      "Engaged as a part-time Code Reviewer, providing insightful feedback and constructive critiques on back-end developer coding assignments submitted by over 180 students.",
-      "Consistently received outstanding ratings, averaging 4.9 out of 5, reflecting the effectiveness of feedback and mentoring in fostering their growth as developers."
+      "Providing insightful feedback and constructive critiques as a part-time Coding Reviewer on back-end developer coding assignments submitted by students."
     ]
   },
   {
@@ -27,9 +25,8 @@
     "title": "QA (Quality Assurance) Intern",
     "duration": "September 2020 - March 2021",
     "description": [
-      "Developed Quality Assurance (QA) and Testing training materials for future QA interns, which  improved the skill and productivity of the new QA team members.",
-      "Wrote comprehensive test cases for a new software product, which helped to find and fix several critical software bugs before release.",
-      "Composed streamlined project documentation and manual guideline after software testing process, which helped to improve the overall quality of the software product."
+      "Developed training materials for future QA interns.",
+      "Wrote comprehensive test cases for a new software product."
     ]
   }
 ]
