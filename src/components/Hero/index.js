@@ -28,7 +28,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="md:w-2/3 lg:w-2/3 sm:w-full px-4 py-8 md:py-16 lg:py-24">
-              <h1 className="text-xl md:text-2xl lg:text-3xl font-bold font-mono dark:text-white mb-4">Hi, I'm Tara. 👋 </h1>
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-bold font-mono dark:text-white mb-4">Hi, I&apos;m Tara. 👋 </h1>
               <p className="text-md md:text-l lg:text-xl mb-2 font-thin font-mono dark:text-gray-300">
                 I am a back-end developer based in Bali. 
               </p>

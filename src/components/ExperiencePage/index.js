@@ -12,7 +12,7 @@ const ExperiencePage  = () => {
   const transitionRef = useRef(null)
 
   return (
-    <section id="experience" className="bg-white dark:bg-gray-800 py-20 w-full min-h-screen">
+    <section id="experience" className="bg-white dark:bg-gray-800 px-5 md:px-10 py-10 md:py-20 w-full min-h-screen">
       <PageTransition ref={transitionRef}>
         <div className="container mx-auto px-4 sm:px-8 lg:px-16">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-mono dark:text-gray-300 mb-4">Experience</h1>
