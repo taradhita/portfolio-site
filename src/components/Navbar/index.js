@@ -43,15 +43,15 @@ const Navbar = () => {
     {href:'/projects', page:'Projects'},
   ]
 
-  const navLinkStyle = "text-dark dark:text-gray-200 hover:text-white dark:hover:text-gray-700 hover:bg-gray-700 dark:hover:bg-gray-200 px-1 py-1  text-sm font-mono font-medium"
+  const navLinkStyle = "text-dark dark:text-primary-200 hover:text-primary-50 dark:hover:text-primary-700 hover:bg-primary-700 dark:hover:bg-primary-200 px-1 py-1  text-sm font-display font-medium"
 
-  const activeStyle = navLinkStyle + " border-b-4 border-teal-400"
+  const activeStyle = navLinkStyle + " border-b-4 border-secondary-400"
 
   return (
-    <nav className="bg-white dark:bg-gray-800">
+    <nav className="bg-primary bg-primary-100 dark:bg-primary-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" onClick={() => setIsShow(false)} className="font-mono text-xl font-bold dark:text-gray-200">
+          <Link href="/" onClick={() => setIsShow(false)} className="font-display text-xl font-bold dark:text-primary-200">
               Nadia Taradhita
           </Link>
           {/* Navbar Menu Desktop */}
@@ -64,7 +64,7 @@ const Navbar = () => {
                     </Link>
                   )
                 })}
-                <button onClick={toggleDarkMode} className="hover:bg-gray-700 dark:hover:bg-gray-200 dark:text-gray-200 hover:text-white dark:hover:text-gray-700 px-1 py-1">
+                <button onClick={toggleDarkMode} className="hover:bg-primary-700 dark:hover:bg-primary-200 dark:text-primary-200 hover:text-primary-50 dark:hover:text-primary-700 px-1 py-1">
                   <FontAwesomeIcon icon={faCircleHalfStroke} size="lg"/>
                 </button>
               </div> 
@@ -72,7 +72,7 @@ const Navbar = () => {
           {/* Hamburger Icon for Mobile */}
           <div className="flex lg:hidden">
             <button
-              className="text-dark dark:text-gray-300 inline-flex items-center justify-center p-2 hover:text-white hover:bg-gray-700 focus:outline-none"
+              className="text-dark dark:text-primary-300 inline-flex items-center justify-center p-2 hover:text-primary-50 hover:bg-primary-700 focus:outline-none"
               onClick={toggleMenu}
             >
               <svg
@@ -101,7 +101,7 @@ const Navbar = () => {
           </div>
           {/* Hidden Menu for Mobile */}
           {isShow && (
-            <div className="absolute top-16 right-0 bottom-0 lg:hidden bg-white  dark:bg-gray-800 w-full z-10">
+            <div className="absolute top-16 right-0 bottom-0 lg:hidden bg-primary-100  dark:bg-primary-900 w-full z-10">
               <div className="flex flex-col items-center justify-centerpx-2 pt-2 pb-3 space-y-1 sm:px-3">
                 {menus.map(menu => {
                   return (
@@ -109,13 +109,13 @@ const Navbar = () => {
                       onClick={handleLinkClick}
                       href={menu.href}
                       key={menu.page}
-                      className="text-dark dark:text-gray-300 hover:text-white hover:bg-gray-700 block px-3 py-2 text-base font-medium font-mono"
+                      className="text-dark dark:text-primary-300 hover:text-white hover:bg-primary-700 block px-3 py-2 text-base font-medium font-display"
                       >
                       {menu.page}
                     </Link>
                   )
                 })}
-                <button onClick={toggleDarkMode} className="px-3 py-2 dark:text-gray-300 hover:bg-gray-700 hover:text-white rounded-md"><FontAwesomeIcon icon={faCircleHalfStroke} size="lg"/></button>
+                <button onClick={toggleDarkMode} className="px-3 py-2 dark:text-primary-300 hover:bg-primary-700 hover:text-white rounded-md"><FontAwesomeIcon icon={faCircleHalfStroke} size="lg"/></button>
             </div>
           </div>
           )}

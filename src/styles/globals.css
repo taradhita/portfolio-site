@@ -5,12 +5,12 @@
 @layer utilities {
     .shadow-solid-light {
         box-shadow: 8px 8px;
-        @apply border-gray-300;
+        @apply border-primary-300;
     }
 
     .shadow-solid-dark {
         box-shadow: 8px 8px;
-        @apply border-black;
+        @apply border-primary-900;
     }
 }
 

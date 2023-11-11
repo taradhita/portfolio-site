@@ -9,10 +9,10 @@ const ProjectsPage = () => {
   const transitionRef = useRef(null)
   
   return (
-    <section id="projects" className="bg-white dark:bg-gray-800 px-5 md:px-10 py-10 md:py-20 w-full min-h-screen">
+    <section id="projects" className="bg-primary-100 dark:bg-primary-900 px-5 md:px-10 py-10 md:py-20 w-full min-h-screen">
       <PageTransition ref={transitionRef}>
         <div className="container mx-auto px-4 sm:px-8 lg:px-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-mono dark:text-gray-300 mb-4">Projects</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-display dark:text-primary-300 mb-4">Projects</h2>
           <div className="mt-6 md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {sortDescProject.map(project => (
               <Card project={project} key={project.id}/>
