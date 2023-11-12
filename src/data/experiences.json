@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "company": "PT. Timedoor Indonesia",
+    "company": "Timedoor Indonesia",
     "title": "Back End Developer",
     "duration": "March 2021 - Present",
     "description": [
@@ -12,16 +12,7 @@
   },
   {
     "id": 2,
-    "company": "Dicoding",
-    "title": "External Coding Reviewer",
-    "duration": "July 2022 - January 2023",
-    "description": [
-      "Providing insightful feedback and constructive critiques as a part-time Coding Reviewer on back-end developer coding assignments submitted by students."
-    ]
-  },
-  {
-    "id": 3,
-    "company": "PT. Timedoor Indonesia",
+    "company": "Timedoor Indonesia",
     "title": "QA (Quality Assurance) Intern",
     "duration": "September 2020 - March 2021",
     "description": [

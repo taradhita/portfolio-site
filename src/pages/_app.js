@@ -10,8 +10,6 @@ import { useRef } from 'react'
 export default function App ({ Component, pageProps }) {
   const router = useRouter()
   const pageKey = router.asPath
-  const wrapperRef = useRef(null);
-
   return (
     <>
       <Head>
@@ -23,14 +21,9 @@ export default function App ({ Component, pageProps }) {
       </Head>
       <ThemeProvider attribute="class">
         <Navbar />
-        <AnimatePresence initial={false} custom={pageKey} mode='wait'>
-          <motion.div key={pageKey} 
-            initial={{ opacity: 0 }} 
-            animate={{ opacity: 1 }} 
-            exit={{ opacity: 0 }} 
-            ref={wrapperRef}
-          >
-            <Component {...pageProps} />
+        <AnimatePresence initial={false} mode='wait'>
+          <motion.div key={pageKey}>
+            <Component key={pageKey} {...pageProps} />
           </motion.div>
         </AnimatePresence>
       </ThemeProvider>
